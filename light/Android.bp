@@ -7,8 +7,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.meizu_sm6150",
-    init_rc: ["android.hardware.light@2.0-service.meizu_sm6150.rc"],
+    name: "android.hardware.light@2.0-service.meizu_m1923",
+    init_rc: ["android.hardware.light@2.0-service.meizu_m1923.rc"],
     srcs: ["service.cpp", "Light.cpp"],
     shared_libs: [
         "libbase",

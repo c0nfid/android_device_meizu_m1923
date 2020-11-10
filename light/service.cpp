@@ -5,7 +5,7 @@
  *
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.meizu_sm6150"
+#define LOG_TAG "android.hardware.light@2.0-service.meizu_m1923"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
