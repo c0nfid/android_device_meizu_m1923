@@ -34,6 +34,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=400
 
 # Inherit some common Sakura stuff.
+SAKURA_OFFICIAL := true
+# Exclude AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
 TARGET_BOOT_ANIMATION_RES := 1080
 SAKURA_GAPPS=true
 TARGET_GAPPS_ARCH := arm64
