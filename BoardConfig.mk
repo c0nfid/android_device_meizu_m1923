@@ -19,6 +19,9 @@ TARGET_OTA_ASSERT_DEVICE := m1923,Note9
 # Build
 BUILD_BROKEN_DUP_RULES := true
 
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
