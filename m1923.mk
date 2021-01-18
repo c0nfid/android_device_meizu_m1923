@@ -38,18 +38,24 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
-    
-# Audio
-PRODUCT_PACKAGES += \
-    audio.a2dp.default \
-    libaacwrapper
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
     libdisplayconfig \
     libqdMetaData.system \
     libvulkan \
-    vendor.display.config@1.0
+    vendor.display.config@1.0 \
+    gralloc.sm6150 \
+    hwcomposer.sm6150 \
+    memtrack.sm6150
+    libtinyxml
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -79,6 +85,19 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.soundtrigger@2.2-impl \
+    audio.a2dp.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudio-resampler \
+    libdynproc \
+    libtinyalsa \
+    libaacwrapper
+    
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
 
