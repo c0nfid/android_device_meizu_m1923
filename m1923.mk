@@ -34,6 +34,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service
+    
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -94,6 +99,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
     
+# Sensor
+PRODUCT_PACKAGES += \
+    libsensorndkbridge \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service-qti
+        
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
